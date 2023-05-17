@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+    <%- include('../../../ejs/head/defaut.ejs') -%>
+    
+    <link rel="stylesheet" href="/styles/store.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <title>karinaTwo | LOLja</title>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="/"><img
+                src="/images/icons/icon_2.png"
+                alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="/support">Suporte</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="/dashboard">dashboard</a>
+        <p class="menu cta">menu</p>
+    </header>
+    <div id="mobile__menu" class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+            <a href="/support">suporte</a>
+            <a href="/dashboard">dashboard</a>
+        </div>
+    </div>
+
+    <div class="intro">
+        <div class="card-row_buy">
+            <div class="card_buy">
+                <h1 class="product_type">comprar vip user</h1>
+                <div class="card-row_buy1">
+                    
+                    <div class="card_buy1">
+                        <h1 class="product_name">30 dias de vip-user</h1>
+                        <a href="https://ko-fi.com/s/9810f9559a" target="_blank"><button class="buy_button">comprar (via kofi)</button></a>
+                    </div>
+
+                    <div class="card_buy1">
+                        <h1 class="product_name">60 dias de vip-user</h1>
+                        <a href="https://ko-fi.com/s/0943bebfb7" target="_blank"><button class="buy_button">comprar (via kofi)</button></a>
+                    </div>
+
+                    <!-- div class="card_buy1">
+                        <h1>vip user vitalício</h1>
+                        <a href="/store/vip_user60"><button class="buy_button">comprar (R$ 3.000.000.000.000,00)</button></a>
+                </div -->
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="features" id="features">
+        <h1 class="title">vantagens do vip user</h1>
+    
+        <div class="card-row">
+            <div class="card">
+                <h1>+ panther-coins</h1>
+                <p>você consegue 2x mais panther-coins no /daily!</p>
+            </div>
+
+            <div class="card">
+                <h1>+ panther-coins²</h1>
+                <p>sim, mais coisa a ver com panther-coins.</p>
+                <p>todos os dias você irá ganhar 200 panther-coins sem fazer nada!</p>
+            </div>
+
+            <div class="card">
+                <h1>/reps com tempo reduzido</h1>
+                <p>tempo de espera reduzido no /reps, de 30 minutos para 10 minutos</p>
+            </div>
+
+            <div class="card">
+                <h1>comandos exclusivos</h1>
+                <p>você tem acesso ao /spam, /actions_nsfw, /coinflip_bet dentre outros comandos!</p>
+            </div>
+
+            <div class="card">
+                <h1>+ backgrounds</h1>
+                <p>você tem acesso aos backgrounds exclusivos!</p>
+                <p><span style="color: rgb(175, 22, 22)">em breve:</span> backgrounds personalizados!</p>
+            </div>
+            
+        </div>
+        <h1 class="title">eai, bora virar vip user?</h1>
+    </div>
+
+    <div class="features1" id="readme">
+        <h1 class="title1">leia antes de comprar</h1>
+    
+        <div class="card-row1">
+
+            <div class="card1">
+                <h1>"por que eu deveria comprar na loja oficial?"</h1>
+                <p>as compras ajudam a karinaTwo a continuar a alegrar, ajudar e divertir pessoas mundo afora! usamos o dinheiro para cobrir custos com hospedagem, impostos, implementação de novas funcionalidades, expansão da karinaTwo e muito mais.</p>
+            </div>
+            
+            <div class="card1">
+                <h1>"as compras são seguras?"</h1>
+                <p>sim, todas as compras são processadas pela ko-fi.com, então você pode comprar sabendo que seus dados estão em segurança sem risco de serem vazados</p>
+            </div>
+
+            <div class="card1">
+                <h1>"as compras tem devolução?"</h1>
+                <p>não, pois você está comprando um produto digital, e não um físico</p>
+            </div>
+
+            <div class="card1">
+                <h1>"posso usar o cartão dos meus pais para comprar?"</h1>
+                <p>você só pode usar um meio de pagamento que você esteja autorizado a usar. usar um cartão que você não tem autorização é fraude, você será banido de usar a karinaTwo e você não receberá reembolso!</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <%- include('../../../ejs/footer.ejs') -%>
+    <script src="../../scripts/screamMobile.js"></script>
+</body>
+
+</html>

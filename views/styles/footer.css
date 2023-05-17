@@ -1,0 +1,34 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500&display=swap);
+
+footer {
+    bottom: 0;
+    position: relative;
+    background-color: #1a1a1a;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+footer .links {
+    text-align: center;
+}
+
+footer .copy, footer .designer {
+    margin-top: 2%;
+    color: #fff;
+    font-family: Montserrat;
+    text-align: center;
+    opacity: 50%;
+    transition-duration: 0.5s;
+}
+
+footer .designer:hover, footer .copy:hover {
+    opacity: 100%;
+    transition-duration: 0.5s;
+}
+
+footer .links .fab {
+    color: #fff;
+    font-size: 200%;
+    padding-left: 1%;
+    padding-right: 1%;
+}

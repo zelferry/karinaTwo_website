@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <%- include('../../../ejs/head/defaut.ejs') -%>
+    <meta http-equiv="refresh" content="4; url = /dashboard" />
+    
+    <link rel="stylesheet" href="/styles/dashboard/error.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <title>karinaTwo | <%= pagename %></title>
+</head>
+
+<body>
+    <br/>
+    <br/>
+    <div class="redirect_1">
+        <h1><%= title %></h1>
+        <h2>você será redirecionado automaticamente para a página principal do painel de controle</h2>
+        <a href="<%= link %>"><button><i class="fa fa-reply" aria-hidden="true"></i> ir manualmente</button></a>
+    </div>
+
+    <script src="../../scripts/screamMobile.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <%- include('../../ejs/head/defaut.ejs') -%>
+    <%- include('../../ejs/head/metatags.ejs') -%>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3616800079070158"
+     crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/styles/body.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <title>karinaTwo | página inicial</title>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="/"><img
+                src="/images/icons/icon_2.png"
+                alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="/support">Suporte</a></li>
+                <li><a href="/about">Sobre</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="/login">Login</a>
+        <p class="menu cta">Menu</p>
+    </header>
+    <div id="mobile__menu" class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+            <a href="/support">Suporte</a>
+            <a href="/about">Sobre</a>
+            <a href="/login">Login</a>
+        </div>
+    </div>
+
+    <div class="intro">
+        <h1>karinaTwo</h1>
+        <h4>karinaTwo e uma bot multiuso cheia de comandos, funcionalidades e etc!</h4>
+        <div class="buttons">
+            <a href="/add"><button><i class="fa fa-plus"></i> Adicionar</button></a>
+            
+            <a href="/support"><button><i class="fa fa-phone"></i> Suporte</button></a>
+            
+            <a href="/login"><button><i class="fa fa-sign-in"></i> Login</button></a>
+        </div>
+    </div>
+
+    <div class="features">
+        <h1 class="title">Funcionalidades disponíveis</h1>
+    
+        <div class="card-row">
+            <% for (let i = 0; i < features.length; i++) {%>
+                <div class="card">
+                    <h1><%= features[i].title %></h1>
+                    <p><%= features[i].description %></p>
+                </div>
+            <% } %>
+        </div>
+    </div>
+
+    <%- include('../../ejs/footer.ejs') -%>
+
+    <script src="../../scripts/screamMobile.js"></script>
+        <script>
+            function loading(){
+                $('#load').css('display','none');
+            }
+        </script>
+</body>
+
+</html>

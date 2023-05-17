@@ -1,0 +1,276 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500&display=swap);
+
+/*página*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.intro {
+    display: block;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    text-align: center;
+}
+
+
+
+/*.intro .buttons button a {
+    outline: none;
+    text-decoration: none;
+    font-family: Montserrat;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.intro .buttons button a:hover {
+    color: #000000;
+    transition-duration: 0.5s;
+}*/
+
+.buy_button {
+	width: 89%;
+	cursor: pointer;
+	background-color: #3BA55B;
+	color: #ffffff;
+	font-family: Montserrat;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	margin-top: 10px;
+	transition-duration: 0.5s;
+}
+
+.buy_button:hover {
+	background-color: white;
+	color: #2b2b2b;
+	transition-duration: 0.5s;
+}
+
+
+/*vantagens do vip user*/
+.features {
+    border-top: solid 1px #000000;
+    margin-top: 20%;
+    padding: 30px;
+    background-color: #ffffff;
+    background-size: 70px;
+}
+
+.features .title {
+    font-family: Montserrat;
+    font-size: 150%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    color: #000000;
+}
+
+.features .description {
+    font-family: Montserrat;
+    text-align: center;
+    color: #fff;
+}
+
+.features .card-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.features .card-row .card {
+    width: 100%;
+    padding: 35px 20px 35px 20px;
+    background-color: #121212;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition-duration: 0.5s;
+}
+
+.features .card-row .card:hover {
+    background-color: #1a1a1a;
+    transition-duration: 0.5s;
+}
+
+@media only screen and (max-width: 320px) {
+    main .information p {
+        font-size: 70%;
+    }
+}
+
+.features .card-row .card h1 {
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: Montserrat;
+}
+
+.features .card-row .card p {
+    text-align: left;
+    cursor: pointer;
+    color: rgb(150, 150, 150);
+    font-family: Montserrat;
+    transition-duration: 0.5s;
+}
+
+.features .card-row .card p:hover {
+    color: #fff;
+    transition-duration: 0.5s;
+}
+
+
+/*info*/
+.features1 {
+    border-top: solid 1px #000000;
+    padding: 30px;
+    background-color: #262626;
+    background-size: 70px;
+}
+
+.features1 .title1 {
+    font-family: Montserrat;
+    font-size: 150%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.features1 .card-row1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.features1 .card-row1 .card1 {
+    width: 100%;
+    padding: 35px 20px 35px 20px;
+    background-color: #121212;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition-duration: 0.5s;
+}
+
+.features1 .card-row1 .card1:hover {
+    background-color: #1a1a1a;
+    transition-duration: 0.5s;
+}
+
+.features1 .card-row1 .card1 h1 {
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: Montserrat;
+}
+
+.features1 .card-row1 .card1 p {
+    text-align: left;
+    cursor: pointer;
+    color: rgb(150, 150, 150);
+    font-family: Montserrat;
+    transition-duration: 0.5s;
+}
+
+.features1 .card-row1 .card1 p:hover {
+    color: #fff;
+    transition-duration: 0.5s;
+}
+
+/*apresentação dos produtos */
+.card-row_buy {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.card-row_buy .card_buy {
+    width: 86%;
+    padding: 12px 12px 12px 12px;
+    box-shadow: 5px 5px 5px #141414;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card-row_buy .card_buy .product_type {
+    text-align: center;
+    color: #ffffff;
+    font-size: 194%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: Montserrat;
+}
+
+
+/*produtos*/
+.card-row_buy1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.card-row_buy1 .card_buy1 {
+    width: 80%;
+    max-width: 250px;
+    padding: 35px 20px 35px 20px;
+    box-shadow: 5px 5px 5px #141414;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.card-row_buy1 .card_buy1 .product_name {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 19px;
+    font-family: Montserrat;
+}
+
+.card-row_buy1 .card_buy1 p {
+    text-align: left;
+    cursor: pointer;
+    color: rgb(150, 150, 150);
+    font-family: Montserrat;
+}

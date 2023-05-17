@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Línguas e idiomas",
+        "description": "Atualmente, contamos com Português e Inglês [pt-br, eng] disponíveis nas funcionalidades da bot. Futuramente, planejamos adicionar outras línguas e idiomas as funcionalidades!"
+    },
+    {
+        "title": "nsfw",
+        "description": "Contamos com uma quantidade razoável de comandos de conteúdo NSFW, incluindo imagens, Gifs e vídeos. Todos os resultados são filtrados para melhor qualidade, e é possível executar até 10 imagens de uma só vez!"
+    },
+    {
+        "title": "moderação",
+        "description": "contamos com um sistema de punições, como comandos para expulsar, banir, mute... A fim de tornar mais fácil manter a civilização no seu servidor!"
+    },
+    {
+        "title": "economia",
+        "description": "Contamos com um sistema de economia básico [panthercoins], que você provavelmente já viu algo parecido em outros Bots, ou seja, prêmios diários, cosméticos, VIP...."
+    },
+    {
+        "title": "fácil de usar",
+        "description": "nenhum painel necessário, configure tudo facilmente no ambiente do discord!"
+    },
+    {
+        "title": "gratuito",
+        "description": "todos os principais recursos estão disponíveis gratuitamente, inicie uma assinatura premium para desbloqueia recursos adicionais!"
+    }
+]

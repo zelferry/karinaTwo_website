@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500&display=swap);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.redirect_1 {
+    text-align: center;
+    color: #fff;
+    font-family: Montserrat;
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+.redirect_1 a button {
+    text-align: center;
+    font-size: 150%;
+    margin-top: 5%;
+    color: #fff;
+    font-family: Montserrat;
+    cursor: pointer;
+    background-color: #2b2b2b;
+    padding: 7px 12px 7px 12px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    transition-duration: 0.5s;
+}
+
+.redirect_1 a button:hover {
+    background-color: #ffffff;
+    color: #2b2b2b;
+    transition-duration: 0.5s;
+}

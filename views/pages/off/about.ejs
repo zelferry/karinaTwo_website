@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <%- include('../../ejs/head/defaut.ejs') -%>
+    
+    <link rel="stylesheet" href="/styles/about.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <title>karinaTwo | Sobre</title>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="/"><img
+                src="/images/icons/icon_2.png"
+                alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="/support">Suporte</a></li>
+                <li><a href="/about">Sobre</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="/login">Login</a>
+        <p class="menu cta">Menu</p>
+    </header>
+    <div id="mobile__menu" class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+            <a href="/support">Suporte</a>
+            <a href="/about">Sobre</a>
+            <a href="/login">Login</a>
+        </div>
+    </div>
+
+<div class="about">
+        <h1><i class="fas fa-robot"></i> Sobre a karinaTwo Bot</h1>
+        <p>A karina é uma bot para seu Servidor Discord, com o objetivo de te ajudar e entreter seus membros. Sendo desenvolvido pelo <strong>Zelferry</strong>, e tem a ideia de ser uma bot 100% customizavel. Assim podendo ser aceito por qualquer comunidade do Discord!</p>
+
+        <p>Com vários sistemas incriveis que vão deixar o seu Servidor Impecável! Como o sistema dedicado aos Servidores com membros que ficam spawnando nos chats sem parar!</p>
+
+        <p>E também possuindo vários comandos para te ajudar e/ou entreter seus membros!</p>
+    
+        <h1><i class="fas fa-cat"></i> Sobre a Personagem</h1>
+
+        <p>a karinaTwo personagem e uma pantera negra bi, que gosta de frango frito, ficar zuando e de ajudar os outros! </p>
+
+        <p>uma imagem da karina(sim e de g****) <a href="https://media.discordapp.net/attachments/834607934633541653/901513973780865114/Screenshot_2021-02-25-22-46-10.png">Clique aqui pra ver</a></p>
+
+        <h1><i class="fas fa-question"></i> Perguntas Frequentes</h1>
+
+        <ul>
+            <li><strong>1º Qual o Prefixo da karina?</strong> O Prefixo da karinaTwo é <code>/</code>!</li>
+
+            <li><strong>2º Encontrei um Problema nos Comandos, onde reporto?</strong> Você pode enviar o seu reporte no servidor de suporte da KARINATWO, para poder entrar no servidor, <a href="/support">Clique Aqui</a>!</li>
+
+            <li><strong>3º Como posso enviar um Voto?</strong> Atualmente a karinaTwo possui um unico meio de sistema de votos, fornecido pela top.gg. Para realizar seu voto, <a href="/upvote">Clique Aqui</a>!</li>
+
+            <li id="donate"><strong>4º Gostei da karinaTwo, onde posso fazer um Donate?</strong> as doações podem ser feitas via PAYPAL de 2 formas: <a href="https://www.paypal.com/donate/?business=AL8ERL24TWNLS&amount=5&no_recurring=0&currency_code=BRL">doar apenas 5 reais</a> ou <a href="https://www.paypal.com/donate/?business=AL8ERL24TWNLS&no_recurring=0&currency_code=BRL">doar o quanto você quiser</a>(os donates ajudam a karinaTwo)(a conta usada para os donates foi a minha conta pessoal, porque cria uma conta empresárial e muito difícil)</li>
+        </ul>
+    </div>
+
+    <%- include('../../ejs/footer.ejs') -%>
+    <script src="../../scripts/screamMobile.js"></script>
+</body>
+
+</html>

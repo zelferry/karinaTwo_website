@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <%- include('../../../ejs/head/defaut.ejs') -%>
+    <meta http-equiv="refresh" content="4; url = /" />
+        
+    <link rel="stylesheet" href="/styles/dashboard/error.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <title><%= erro_code %></title>
+</head>
+
+<body>
+    <br/>
+    <div class="redirect_1">
+        <h1>erro <%= erro_code %></h1>
+        <br/>
+        <img src="https://http.cat/<%= erro_code %>" width="350">
+        <br/>
+        <h2>você será redirecionado automaticamente para a página inicial</h2>
+        <a href="/"><button><i class="fa fa-reply" aria-hidden="true"></i> ir manualmente</button></a>
+    </div>
+
+    <script src="../../scripts/screamMobile.js"></script>
+</body>
+
+</html>

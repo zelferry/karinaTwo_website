@@ -1,0 +1,58 @@
+{
+    "50k_panthercoins": {
+        "type": "coins",
+        "coins": 50000,
+        "prize": {
+            "name": "2,50",
+            "value": 250
+        }
+    },
+    "1m_panthercoins": {
+        "type": "coins",
+        "coins": 1000000,
+        "prize": {
+            "name": "4,00",
+            "value": 400
+        }
+    },
+    "2_5m_panthercoins": {
+        "type": "coins",
+        "coins": 2500000,
+        "prize": {
+            "name": "10,00",
+            "value": 1000
+        }
+    },
+    "5m_panthercoins": {
+        "type": "coins",
+        "coins": 5000000,
+        "prize": {
+            "name": "18,00",
+            "value": 1800
+        }
+    },
+    "10m_panthercoins": {
+        "type": "coins",
+        "coins": 10000000,
+        "prize": {
+            "name": "35,00",
+            "value": 3500
+        }
+    },
+    "vip_user30": {
+        "type": "vip",
+        "duration": 30,
+        "prize": {
+            "name": "15,00",
+            "value": 1500
+        }
+    },
+    "vip_user60": {
+        "type": "vip",
+        "duration": 60,
+        "prize": {
+            "name": "35,00",
+            "value": 3500
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "cookie": {
+        "maxAge": 604800000
+    },
+    "resave": true,
+    "saveUninitialized": false
+}

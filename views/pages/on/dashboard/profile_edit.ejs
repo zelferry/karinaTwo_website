@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <%- include('../../../ejs/head/defaut.ejs') -%>
+        
+    <link rel="stylesheet" href="/styles/dashboard/profile_edit.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+
+    <title>karinaTwo | painel</title>
+</head>
+
+<body>
+    <br/>
+    <div class="user-info">
+        <h3 class="infor1"> editando <%= user.username%>#<%= user.discriminator %> </h3>
+
+            <h6 class="infor1">Espaços com <span style="color: rgb(175, 22, 22)">*</span> ao lado são obrigatórios.</h6>
+
+        <hr/>
+        <br/>
+    
+    <form method="POST" enctype='multipart/form-data'>
+        <div class="form-group">
+            <i class="infor1"><span style="color: rgb(175, 22, 22)">*</span>sobre mim:</i>
+            <br/>
+            <textarea name="usertext" id="usertext" class="form-control" required="required" placeholder="pão de queijo :3" style="width: 98%; height: 200px;" minlength="6" maxlength="602" rows=3/><%=db.usertext%></textarea>
+        </div>
+        <br/>
+        
+        <div class="form-group">
+            <i class="infor1">e621 blacklist:</i>
+            
+            <select name="tags" id="tags" style="background" multiple>
+                  <% config.e6.map(a => {%>
+                    <% if(db.config.e6.blacklist.includes(a)) {%>
+                        <option value="<%= a %>" selected><%= a %></option>
+                    <% } else { %>
+                    <option value="<%= a %>"><%= a %></option>
+                    <% } %>
+                 <% }); %>
+              </select>
+      </div>
+        
+        <br/>
+        <button type="submit" class="config-daily"><i class="fad fa-save"></i> salvar</button>
+        <a href="/dashboard"><button type="button"><i class="fa fa-arrow-to-left"></i> descartar</button></a>
+    </form>
+                     
+    </div>
+    <script src="../../scripts/screamMobile.js"></script>
+</body>
+
+</html>
