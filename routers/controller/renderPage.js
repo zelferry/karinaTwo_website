@@ -19,7 +19,8 @@ router.get('/', async (req, res) => {
             root: "./views/"
         });
     }
-    console.log("a")
+
+    console.log("a");
 });
 
 router.get("/about", async (request, response) => {

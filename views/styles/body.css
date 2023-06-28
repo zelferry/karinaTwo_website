@@ -8,7 +8,7 @@
 
 .intro {
     display: block;
-    margin-top: 15%;
+    margin-top: 13%;
     margin-bottom: 15%;
     text-align: center;
 }
@@ -102,7 +102,8 @@
 }
 
 .features .card-row .card {
-    width: 100%;
+    width: 90%;
+    max-width: 350px;
     padding: 35px 20px 35px 20px;
     background-color: #121212;
     border-radius: 10px;
@@ -178,7 +179,8 @@
 }
 
 .features1 .card-row1 .card1 {
-    width: 100%;
+    width: 90%;
+    max-width: 350px;
     padding: 35px 20px 35px 20px;
     background-color: #121212;
     border-radius: 10px;

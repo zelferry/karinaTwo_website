@@ -135,17 +135,5 @@ router.post("/user/edit", upload.single('image'), async (request, response) => {
         root: "./views/"
     });
 });
-/*
-router.get("/store", async (request, response) => {
-	if (!request.session.bearer_token) {
-		response.redirect("/login");
-	} else {
-        response.status(200).render("pages/on/dashboard/store.ejs", {
-            user: request.session.user_info,
-            db: await dbdaily.fech(request.session.user_info),
-            root: "./views/"
-        });
-    }
-});*/
 
 module.exports = router

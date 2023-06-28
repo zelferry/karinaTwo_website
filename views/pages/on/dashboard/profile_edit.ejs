@@ -14,7 +14,7 @@
 <body>
     <br/>
     <div class="user-info">
-        <h3 class="infor1"> editando <%= user.username%>#<%= user.discriminator %> </h3>
+        <h3 class="infor1"> editando @<%= user.username %></h3>
 
             <h6 class="infor1">Espaços com <span style="color: rgb(175, 22, 22)">*</span> ao lado são obrigatórios.</h6>
 
@@ -32,7 +32,7 @@
         <div class="form-group">
             <i class="infor1">e621 blacklist:</i>
             
-            <select name="tags" id="tags" style="background" multiple>
+            <select name="tags" id="tags" multiple>
                   <% config.e6.map(a => {%>
                     <% if(db.config.e6.blacklist.includes(a)) {%>
                         <option value="<%= a %>" selected><%= a %></option>
@@ -40,7 +40,7 @@
                     <option value="<%= a %>"><%= a %></option>
                     <% } %>
                  <% }); %>
-              </select>
+            </select>
       </div>
         
         <br/>

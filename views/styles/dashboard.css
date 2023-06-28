@@ -7,26 +7,28 @@
 }
 
 .dashboard {
-	display: block;
+	/*display: block;*/
+	padding: 1rem;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 5%;
+	margin-top: 0.5%;
 	margin-bottom: 7%;
 	text-align: center;
-	width: 90%;
-	max-width: 500px;
 }
 
-/*.dashboard hr {
-    color: #ff0000
-}*/
+.child {
+	padding: 1rem;
+}
+
+.inline-block-child {
+	display: inline-block;
+}
 
 .dashboard h2 {
 	margin-top: 20px;
     margin-bottom: 10%;
 	color: #fff;
 	font-family: Montserrat;
-    /*animation: float 6s ease-in-out infinite;*/
 }
 
 .dashboard a button {
@@ -50,25 +52,25 @@
 }
 
  .user__avatar {
-    width: 35%;
-    height: 35%;
+    width: 25%;
+    height: 25%;
     border-radius: 50%;
     margin-top: 0%;
     margin-left: 0%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 .dashboard .infor1 {
 	margin-top: -8px;
-    margin-bottom: 12%;
+    margin-bottom: 5%;
 	color: #ffffff;
 	font-family: Montserrat;
 	cursor: pointer;
-    /*animation: float 6s ease-in-out infinite;*/
 }
 
 .dashboard .user-status {
     width: 104%;
+	transform: scale(0.9);
     font-family: Montserrat;
     color: #ffffff;
     text-align: left;

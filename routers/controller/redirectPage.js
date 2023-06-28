@@ -22,7 +22,7 @@ router.get("/upvote", (request, response) => {
 });
         
 router.get("/donate", (request, response) => {
-	response.redirect("");
+	response.redirect("https://ko-fi.com/karinatwo/");
 });
 
 module.exports = router;

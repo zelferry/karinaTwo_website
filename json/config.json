@@ -1,5 +1,6 @@
 {
     "port": "8081",
+    "test_mode": false,
     "oauth2": {
         "scopes": [
             "identify"

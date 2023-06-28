@@ -34,8 +34,10 @@
      
        
 <div class="dashboard">
+
+    <div class='child inline-block-child'>
     <img class="user__avatar" src="https://cdn.discordapp.com/avatars/<%= user.id %>/<%= user.avatar %>.png?size=1024">
-       <h3 class="infor1"> olá, <%= user.username%>#<%= user.discriminator %> </h3>
+       <h3 class="infor1"> olá, @<%= user.username%></h3>
            <hr/>
         <br/>
            <div class="user-status">
@@ -44,21 +46,28 @@
                <br/>
                <h3 class="bal">e621 blacklist: <strong id="value2"><%- numbers.e6 -%></strong></h3>
            </div>
-        <br/>
-        <hr/>
+           <br/>
+           <hr/>
+
+    </div>
+
+    <div class='child inline-block-child'>
         <h2><i class="fa fa-wrench" aria-hidden="true"></i> configurações do usuário</h2>
            
-           <a href="/dashboard/daily"><button class="config-daily"><i class="fa fa-money" aria-hidden="true"></i> recompensa diária</button></a>
-               
-           <a href="/dashboard/user/edit"><button class="config-daily"><i class="fa fa-pencil" aria-hidden="true"></i>
- editar conta</button></a>
+        <a href="/dashboard/daily"><button class="config-daily"><i class="fa fa-money" aria-hidden="true"></i> recompensa diária</button></a>
+            
+        <a href="/dashboard/user/edit"><button class="config-daily"><i class="fa fa-pencil" aria-hidden="true"></i>
+editar conta</button></a>
 
-           <a href="/store"><button class="config-daily"><i class="fa fa-store" aria-hidden="true"></i> comprar vip-user</button></a>
-           
-           <br/>
-           <br/>
-           <br/>
-           <a href="/dashboard/user"><button class="danger_button"><i class="fa fa-remove" aria-hidden="true"></i> deletar conta</button></a>
+        <a href="/store"><button class="config-daily"><i class="fa fa-store" aria-hidden="true"></i> comprar vip-user</button></a>
+        
+        <br/>
+        <br/>
+        <br/>
+        <a href="/dashboard/user"><button class="danger_button"><i class="fa fa-remove" aria-hidden="true"></i> deletar conta</button></a>
+    </div>
+        
+        
     </div>
 
     <script src="../../scripts/screamMobile.js"></script>
