@@ -5,16 +5,12 @@ if (process.env.NODE_ENV !== 'production'){
 let express = require('express');
 const path = require("path");
 let app = express();
+const passport = require("passport");
 let colors = require("colors");
 let config = require("./config.json");
 let port =  require("./funcions/port.js")(process.env.PORT || 3000);
 
 let useragent = require('express-useragent');
-
-app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "views"));
-app.use(express.static(path.join(__dirname, "views")));
-//app.use(express.static("./views"));
 
 app.use(require("express-session")({
     secret: process.env.SECRET,
@@ -25,6 +21,14 @@ app.use(require("express-session")({
     saveUninitialized: false
 }));
 
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
+app.use(express.static(path.join(__dirname, "views")));
+//app.use(express.static("./views"));
+
+
+app.use(passport.initialize());
+app.use(passport.session());
 app.use(express.json());
 app.use(useragent.express());
 app.use(express.urlencoded({ extended: true }));
