@@ -18,7 +18,11 @@ app.use(express.static(path.join(__dirname, "views")));
 
 app.use(require("express-session")({
     secret: process.env.SECRET,
-    ...require("./json/session.json")
+    cookie: {
+        maxAge: 604800000
+    },
+    resave: true,
+    saveUninitialized: false
 }));
 
 app.use(express.json());
