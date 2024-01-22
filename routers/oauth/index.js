@@ -13,7 +13,7 @@ router.use(expressSession({
 }));
 
 router.get("/login/callback", async (request, response) => {
-    let redirect_uri = config.test_mode ? "http://localhost:3000/login/callback" : `https://${request.hostname.replace("t", "T")}/login/callback`
+    let redirect_uri = config.test_mode ? "http://localhost:3000/login/callback" : `https://${request.hostname.replace("T", "t")}/login/callback`
     let accessCode = await request.query.code;
 
     if (!accessCode) return response.redirect("/");
