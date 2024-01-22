@@ -3,6 +3,7 @@ if (process.env.NODE_ENV !== 'production'){
 }
 
 let express = require('express');
+const path = require("path");
 let app = express();
 let colors = require("colors");
 let config = require("./config.json");
@@ -11,7 +12,9 @@ let port =  require("./funcions/port.js")(process.env.PORT || 3000);
 let useragent = require('express-useragent');
 
 app.set("view engine", "ejs");
-app.use(express.static("./views"));
+app.set("views", path.join(__dirname, "views"));
+app.use(express.static(path.join(__dirname, "views")));
+//app.use(express.static("./views"));
 
 app.use(express.json());
 app.use(useragent.express());
