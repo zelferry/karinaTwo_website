@@ -30,8 +30,7 @@ router.get("/", async (request, response) => {
             }),
             numbers: {
                 e6: !(value.config.e6.blacklist).length ? "<u style=\"color: rgb(255, 40, 40)\">não a tags bloqueadas</u>" : `${(value.config.e6.blacklist).length} tag(s) bloqueada(s)`
-            },
-            root: "./views/"
+            }
         });
 	};
 });
@@ -44,8 +43,7 @@ router.get("/user", async (request, response) => {
             user: request.session.user_info,
             title: "infelizmente esse local está bloqueado!",
             pagename: "sem acesso",
-            link: "/dashboard",
-            root: "./views/"
+            link: "/dashboard"
         });
     };
 });
@@ -67,8 +65,7 @@ router.get("/daily", async (request, response) => {
                 user: user,
                 title: `volte daqui á ${stringTime}`,
                 link: "/dashboard",
-                pagename: "daily inválido",
-                root: "./views/"
+                pagename: "daily inválido"
             });
             return {}
         } else {
@@ -85,15 +82,13 @@ router.get("/daily", async (request, response) => {
                     user: user,
                     title: "não foi possível resgatar seu daily",
                     link: "/dashboard",
-                    pagename: "erro",
-                    root: "./views/"
+                    pagename: "erro"
                 });
             }
             response.status(200).render("pages/on/dashboard/daily", {
                 user: user,
                 amount: answer,
-                link: "/dashboard",
-                root: "./views/"
+                link: "/dashboard"
             });
             
             await dbdaily.addmoney(user, answer, true);
@@ -110,8 +105,7 @@ router.get("/user/edit", async (request, response) => {
             db: await dbdaily.fech(request.session.user_info),
             config: {
                 e6: require("../../../json/blackliste6.defaut.json")
-            },
-            root: "./views/"
+            }
         });
     }
 });
@@ -131,8 +125,7 @@ router.post("/user/edit", async(request, response) => {
         user: request.session.user_info,
         title: "dados salvos com sucesso!",
         pagename: "salvo!",
-        link: "/dashboard",
-        root: "./views/"
+        link: "/dashboard"
     });
 });
 
