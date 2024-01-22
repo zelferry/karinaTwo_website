@@ -2,8 +2,8 @@ let express = require("express");
 let fetch = require("node-fetch");
 let ms = require("parse-ms");
 let router = express.Router();
-let multer  = require('multer')
-let upload = multer({ dest: 'uploads/' });
+
+
 let { millify } = require("millify");
 
 
@@ -116,7 +116,7 @@ router.get("/user/edit", async (request, response) => {
     }
 });
            
-router.post("/user/edit", upload.single('image'), async (request, response) => {
+router.post("/user/edit", async(request, response) => {
     let data = await model2.findOne({ UserId: request.session.user_info.id });
 
     data.usertext = request.body['usertext'];
