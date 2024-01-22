@@ -15,7 +15,7 @@ app.use(express.static("./views"));
 
 app.use(express.json());
 app.use(useragent.express());
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }));
 
 app.use("/", require("./routers/oauth/index.js"));
 app.use("/", require("./routers/controller/renderPage.js"));
