@@ -38,8 +38,7 @@ app.use(function(req, res, next){
     res.format({
         html: function () {
             res.render("pages/on/dashboard/redirect_image", {
-                erro_code: 404,
-                root: "./views/"
+                erro_code: 404
             });
         },
         json: function () {
