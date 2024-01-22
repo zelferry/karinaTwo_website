@@ -16,7 +16,7 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "views")));
 //app.use(express.static("./views"));
 
-router.use(require("express-session")({
+app.use(require("express-session")({
     secret: process.env.SECRET,
     ...require("./json/session.json")
 }));
