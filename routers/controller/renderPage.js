@@ -1,11 +1,6 @@
 const express = require("express");
 const router = express.Router();
 
-router.use(require("express-session")({
-    secret: process.env.SECRET,
-    ...require("../../json/session.json")
-}));
-
 router.get('/', async (req, res) => {
     if (!req.session.bearer_token) {
         res.status(200).render("pages/off/home", {

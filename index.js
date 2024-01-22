@@ -16,6 +16,11 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "views")));
 //app.use(express.static("./views"));
 
+router.use(require("express-session")({
+    secret: process.env.SECRET,
+    ...require("./json/session.json")
+}));
+
 app.use(express.json());
 app.use(useragent.express());
 app.use(express.urlencoded({ extended: true }));

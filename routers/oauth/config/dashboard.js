@@ -11,11 +11,6 @@ let dbdaily =  require("../../../database/data/economy.js");
 let model2 = require("../../../database/models/user.js")
 let timeout = 86400000
 
-router.use(require("express-session")({
-    secret: process.env.SECRET,
-    ...require("../../../json/session.json")
-}));
-
 router.get("/", async (request, response) => {
 	if (!request.session.bearer_token) {
 		response.redirect("/login");
