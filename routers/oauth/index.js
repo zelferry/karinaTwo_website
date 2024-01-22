@@ -47,7 +47,7 @@ router.get("/login/callback", async (request, response) => {
 });
 
 router.get("/login", (request, response) => {
-    let redirect_uri = config.test_mode ? "http://localhost:3000/login/callback" : `https://${request.hostname.replace("t", "T")}/login/callback`
+    let redirect_uri = config.test_mode ? "http://localhost:3000/login/callback" : `https://${request.hostname.replace("T", "t")}/login/callback`
     response.redirect(`https://discord.com/api/oauth2/authorize` +
         `?client_id=${process.env.CLIENT_ID}` +
         `&redirect_uri=${encodeURIComponent(redirect_uri)}` +
