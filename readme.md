@@ -1,3 +1,4 @@
+> com o projeto principal em hiato, o código do site não recebera atualizações até segunda ordem
 # website da karinaTwo
 
 ## arquivo .env:
@@ -18,3 +19,5 @@ ou:
 ```npm
 npm start
 ```
+
+site feito em EXPRESS e EJS
